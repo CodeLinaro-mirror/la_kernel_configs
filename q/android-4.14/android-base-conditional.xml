@@ -1,4 +1,4 @@
-<kernel minlts="4.9.0" />
+<kernel minlts="4.14.0" />
 
 <!-- KEEP ALPHABETICALLY SORTED -->
 <!-- ARM base requirements -->
@@ -18,6 +18,10 @@
 		<value type="bool">y</value>
 	</config>
 	<config>
+		<key>CONFIG_DEVKMEM</key>
+		<value type="bool">n</value>
+	</config>
+	<config>
 		<key>CONFIG_OABI_COMPAT</key>
 		<value type="bool">n</value>
 	</config>
@@ -31,10 +35,6 @@
 			<value type="bool">y</value>
 		</config>
 	</conditions>
-	<config>
-		<key>CONFIG_ARM64_SW_TTBR0_PAN</key>
-		<value type="bool">y</value>
-	</config>
 	<config>
 		<key>CONFIG_ARMV8_DEPRECATED</key>
 		<value type="bool">y</value>
@@ -61,6 +61,40 @@
 	</config>
 </group>
 
+<!-- For ARM64, CONFIG_ARM64_SW_TTBR0_PAN || CONFIG_ARM64_PAN -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_ARM64</key>
+			<value type="bool">y</value>
+		</config>
+		<config>
+			<key>CONFIG_ARM64_SW_TTBR0_PAN</key>
+			<value type="bool">n</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_ARM64_PAN</key>
+		<value type="bool">y</value>
+	</config>
+</group>
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_ARM64</key>
+			<value type="bool">y</value>
+		</config>
+		<config>
+			<key>CONFIG_ARM64_PAN</key>
+			<value type="bool">n</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_ARM64_SW_TTBR0_PAN</key>
+		<value type="bool">y</value>
+	</config>
+</group>
+
 <!-- x86 base requirements -->
 <group>
 	<conditions>
@@ -69,6 +103,10 @@
 			<value type="bool">y</value>
 		</config>
 	</conditions>
+	<config>
+		<key>CONFIG_DEVKMEM</key>
+		<value type="bool">n</value>
+	</config>
 	<config>
 		<key>CONFIG_PAGE_TABLE_ISOLATION</key>
 		<value type="bool">y</value>
@@ -105,45 +143,17 @@
 	</config>
 </group>
 
-<!-- CONFIG_ANDROID_LOW_MEMORY_KILLER || (CONFIG_MEMCG && CONFIG_MEMCG_SWAP) -->
+<!-- CONFIG_USB implies CONFIG_USB_RTL8152 -->
 <group>
 	<conditions>
 		<config>
-			<key>CONFIG_ANDROID_LOW_MEMORY_KILLER</key>
+			<key>CONFIG_USB_RTL8152</key>
 			<value type="bool">n</value>
 		</config>
 	</conditions>
 	<config>
-		<key>CONFIG_MEMCG</key>
-		<value type="bool">y</value>
-	</config>
-	<config>
-		<key>CONFIG_MEMCG_SWAP</key>
-		<value type="bool">y</value>
-	</config>
-</group>
-<group>
-	<conditions>
-		<config>
-			<key>CONFIG_MEMCG</key>
-			<value type="bool">n</value>
-		</config>
-	</conditions>
-	<config>
-		<key>CONFIG_ANDROID_LOW_MEMORY_KILLER</key>
-		<value type="bool">y</value>
-	</config>
-</group>
-<group>
-	<conditions>
-		<config>
-			<key>CONFIG_MEMCG_SWAP</key>
-			<value type="bool">n</value>
-		</config>
-	</conditions>
-	<config>
-		<key>CONFIG_ANDROID_LOW_MEMORY_KILLER</key>
-		<value type="bool">y</value>
+		<key>CONFIG_USB</key>
+		<value type="bool">n</value>
 	</config>
 </group>
 
