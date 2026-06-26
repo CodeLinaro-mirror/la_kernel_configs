@@ -163,6 +163,8 @@ was not changed - just the enforcement)
 		</lts-versions>
 	</branch>
 	<branch name="android17-6.18" min_android_release="17" version="6.18" launch="2025-11-30" eol="2030-07-01">
-		<no-releases reason="branch in pre-release phase"/>
+		<lts-versions>
+			<release version="6.18.21" launch="2026-06-18" eol="2027-10-01"/>
+		</lts-versions>
 	</branch>
 </kernels>
