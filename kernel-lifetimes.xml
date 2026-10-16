@@ -47,6 +47,8 @@ was not changed - just the enforcement)
 			<release version="5.10.237" launch="2025-06-25" eol="2026-10-01"/>
 			<release version="5.10.240" launch="2025-09-24" eol="2027-01-01"/>
 			<release version="5.10.246" launch="2025-12-10" eol="2027-04-01"/>
+			<release version="5.10.252" launch="2026-04-25" eol="2027-08-01"/>
+			<release version="5.10.257" launch="2026-07-24" eol="2027-11-01"/>
 		</lts-versions>
 	</branch>
 
@@ -66,6 +68,8 @@ was not changed - just the enforcement)
 			<release version="5.10.238" launch="2025-07-24" eol="2026-11-01"/>
 			<release version="5.10.243" launch="2025-10-27" eol="2027-02-01"/>
 			<release version="5.10.246" launch="2026-01-26" eol="2027-05-01"/>
+			<release version="5.10.252" launch="2026-04-23" eol="2027-08-01"/>
+			<release version="5.10.257" launch="2026-07-24" eol="2027-11-01"/>
 		</lts-versions>
 	</branch>
 
@@ -85,6 +89,9 @@ was not changed - just the enforcement)
 			<release version="5.15.185" launch="2025-07-24" eol="2026-11-01"/>
 			<release version="5.15.189" launch="2025-09-24" eol="2027-01-01"/>
 			<release version="5.15.194" launch="2025-12-09" eol="2027-04-01"/>
+			<release version="5.15.197" launch="2026-03-10" eol="2027-07-01"/>
+			<release version="5.15.206" launch="2026-06-16" eol="2027-10-01"/>
+			<release version="5.15.211" launch="2026-09-10" eol="2028-01-01"/>
 		</lts-versions>
 	</branch>
 
@@ -106,6 +113,8 @@ was not changed - just the enforcement)
 			<release version="5.15.185" launch="2025-07-24" eol="2026-11-01"/>
 			<release version="5.15.192" launch="2025-12-21" eol="2027-02-01"/>
 			<release version="5.15.196" launch="2026-01-12" eol="2027-05-01"/>
+			<release version="5.15.202" launch="2026-04-10" eol="2027-08-01"/>
+			<release version="5.15.208" launch="2026-07-10" eol="2027-11-01"/>
 		</lts-versions>
 	</branch>
 
@@ -131,6 +140,9 @@ was not changed - just the enforcement)
 			<release version="6.1.141" launch="2025-07-09" eol="2026-11-01"/>
 			<release version="6.1.145" launch="2025-08-11" eol="2027-01-01"/>
 			<release version="6.1.157" launch="2025-12-09" eol="2027-04-01"/>
+			<release version="6.1.162" launch="2026-03-10" eol="2027-07-01"/>
+			<release version="6.1.172" launch="2026-06-24" eol="2027-10-01"/>
+			<release version="6.1.176" launch="2026-09-24" eol="2028-01-01"/>
 		</lts-versions>
 	</branch>
 
@@ -151,6 +163,9 @@ was not changed - just the enforcement)
 			<release version="6.6.98" launch="2025-08-11" eol="2027-01-01"/>
 			<release version="6.6.102" launch="2025-10-09" eol="2027-02-01"/>
 			<release version="6.6.118" launch="2026-01-12" eol="2027-05-01"/>
+			<release version="6.6.127" launch="2026-04-10" eol="2027-08-01"/>
+			<release version="6.6.139" launch="2026-07-09" eol="2027-11-01"/>
+			<release version="6.6.143" launch="2026-10-09" eol="2028-02-01"/>
 		</lts-versions>
 	</branch>
 
@@ -160,6 +175,15 @@ was not changed - just the enforcement)
 			<release version="6.12.30" launch="2025-07-11" eol="2026-11-01"/>
 			<release version="6.12.38" launch="2025-08-11" eol="2027-01-01"/>
 			<release version="6.12.58" launch="2025-12-11" eol="2027-04-01"/>
+			<release version="6.12.69" launch="2026-03-25" eol="2027-07-01"/>
+			<release version="6.12.81" launch="2026-06-24" eol="2027-10-01"/>
+			<release version="6.12.92" launch="2026-09-29" eol="2028-01-01"/>
+		</lts-versions>
+	</branch>
+	<branch name="android17-6.18" min_android_release="17" version="6.18" launch="2025-11-30" eol="2030-07-01">
+		<lts-versions>
+			<release version="6.18.21" launch="2026-06-18" eol="2027-10-01"/>
+			<release version="6.18.32" launch="2026-09-10" eol="2028-01-01"/>
 		</lts-versions>
 	</branch>
 </kernels>
